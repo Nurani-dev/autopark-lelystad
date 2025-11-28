@@ -3,24 +3,14 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { HeroSlideshow } from "./HeroSlideshow";
 
 export function Hero() {
     return (
         <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
             {/* Background Video */}
-            <div className="absolute inset-0 z-0">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-full object-cover"
-                >
-                    <source src="https://videos.pexels.com/video-files/3256542/3256542-uhd_2560_1440_25fps.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <div className="absolute inset-0 bg-black/60 z-10" />
-            </div>
+            {/* Background Slideshow */}
+            <HeroSlideshow />
 
             {/* Content */}
             <motion.div
