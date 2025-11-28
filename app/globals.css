@@ -26,6 +26,8 @@
   --color-gray-900: var(--gray-900);
   --color-gray-800: var(--gray-800);
   --color-gray-100: var(--gray-100);
+
+  --image-gold-gradient: linear-gradient(to right, var(--gold-dark), var(--gold), var(--gold-light), var(--gold), var(--gold-dark));
 }
 
 body {
@@ -37,11 +39,25 @@ body {
 
 /* Custom Utilities */
 .text-gold-gradient {
-  background: linear-gradient(to right, var(--gold), var(--gold-light));
+  background: linear-gradient(to right, #B48F17, #D4AF37, #F4CF57, #D4AF37, #B48F17);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(to right, #B48F17, #D4AF37, #F4CF57, #D4AF37, #B48F17);
+  background-size: 200% auto;
+  animation: shine 4s linear infinite;
 }
 
 .border-gold-gradient {
-  border-image: linear-gradient(to right, var(--gold), var(--gold-dark)) 1;
+  border-image: linear-gradient(to right, #B48F17, #D4AF37, #F4CF57, #D4AF37, #B48F17) 1;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }

@@ -39,7 +39,7 @@ export function Header() {
             <div className="container mx-auto px-4 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="text-2xl font-bold uppercase tracking-tighter">
-                    Autopark <span className="text-gold">Lelystad</span>
+                    Autopark <span className="text-gold-gradient">Lelystad</span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -48,19 +48,19 @@ export function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium uppercase tracking-wide hover:text-gold transition-colors relative group"
+                            className="text-sm font-medium uppercase tracking-wide hover:text-white transition-colors relative group"
                         >
-                            {link.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all group-hover:w-full" />
+                            <span className="group-hover:text-gold-gradient transition-all duration-300">{link.name}</span>
+                            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold-gradient transition-all group-hover:w-full" />
                         </Link>
                     ))}
                 </nav>
 
                 {/* Contact Info (Desktop) */}
                 <div className="hidden lg:flex items-center gap-6 text-sm">
-                    <a href="tel:+31612345678" className="flex items-center gap-2 hover:text-gold transition-colors">
-                        <Phone className="w-4 h-4 text-gold" />
-                        <span>06 1234 5678</span>
+                    <a href="tel:+31612345678" className="flex items-center gap-2 group">
+                        <Phone className="w-4 h-4 text-gold group-hover:text-gold-light transition-colors" />
+                        <span className="group-hover:text-gold-gradient transition-all">06 1234 5678</span>
                     </a>
                 </div>
 

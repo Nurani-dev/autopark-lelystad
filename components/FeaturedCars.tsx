@@ -37,14 +37,14 @@ export function FeaturedCars() {
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                     <div>
-                        <h2 className="text-gold text-sm font-bold uppercase tracking-widest mb-2">Onze Collectie</h2>
+                        <h2 className="text-gold-gradient text-sm font-bold uppercase tracking-widest mb-2">Onze Collectie</h2>
                         <h3 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Nieuw Binnen</h3>
                     </div>
                     <Link
                         href="/voorraad"
-                        className="group flex items-center gap-2 text-white font-bold uppercase tracking-wide hover:text-gold transition-colors"
+                        className="group flex items-center gap-2 text-white font-bold uppercase tracking-wide hover:text-gold-gradient transition-colors"
                     >
-                        Bekijk alle auto's <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                        Bekijk alle auto's <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 text-gold-gradient" />
                     </Link>
                 </div>
 
@@ -56,7 +56,7 @@ export function FeaturedCars() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="group bg-zinc-900 border border-white/5 hover:border-gold/30 transition-all duration-300"
+                            className="group bg-zinc-900 border border-white/5 hover:border-gold-gradient transition-all duration-300"
                         >
                             {/* Image */}
                             <div className="relative aspect-[16/10] overflow-hidden">
@@ -73,7 +73,7 @@ export function FeaturedCars() {
                                 )}
 
                                 <div className="absolute bottom-4 left-4">
-                                    <p className="text-gold font-bold text-xl">{car.price}</p>
+                                    <p className="text-gold-gradient font-bold text-xl">{car.price}</p>
                                 </div>
                             </div>
 
@@ -83,28 +83,28 @@ export function FeaturedCars() {
 
                                 <div className="grid grid-cols-2 gap-4 text-sm text-gray-400">
                                     <div className="flex items-center gap-2">
-                                        <Calendar className="w-4 h-4 text-gold/70" />
+                                        <Calendar className="w-4 h-4 text-gold-gradient/70" />
                                         <span>{car.specs.year}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Gauge className="w-4 h-4 text-gold/70" />
+                                        <Gauge className="w-4 h-4 text-gold-gradient/70" />
                                         <span>{car.specs.km} km</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Fuel className="w-4 h-4 text-gold/70" />
+                                        <Fuel className="w-4 h-4 text-gold-gradient/70" />
                                         <span>{car.specs.fuel}</span>
                                     </div>
                                     <div className="flex items-center gap-2">
-                                        <Zap className="w-4 h-4 text-gold/70" />
+                                        <Zap className="w-4 h-4 text-gold-gradient/70" />
                                         <span>{car.specs.power}</span>
                                     </div>
                                 </div>
 
                                 <div className="mt-6 pt-6 border-t border-white/10 flex justify-between items-center">
-                                    <Link href={`/voorraad/${car.id}`} className="text-white text-sm font-bold uppercase tracking-wide hover:text-gold transition-colors">
+                                    <Link href={`/voorraad/${car.id}`} className="text-white text-sm font-bold uppercase tracking-wide hover:text-gold-gradient transition-colors">
                                         Bekijk Details
                                     </Link>
-                                    <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-gold group-hover:bg-gold group-hover:text-black transition-all">
+                                    <div className="w-8 h-8 rounded-full border border-white/20 flex items-center justify-center group-hover:border-gold-gradient group-hover:bg-gold-gradient group-hover:text-black transition-all">
                                         <ArrowRight className="w-4 h-4" />
                                     </div>
                                 </div>

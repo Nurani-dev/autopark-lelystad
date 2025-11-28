@@ -9,19 +9,19 @@ export function Footer() {
                     {/* Brand */}
                     <div className="space-y-6">
                         <Link href="/" className="text-2xl font-bold uppercase tracking-tighter">
-                            Autopark <span className="text-gold">Lelystad</span>
+                            Autopark <span className="text-gold-gradient">Lelystad</span>
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Uw partner voor exclusieve occasions en premium service. Wij staan voor kwaliteit, betrouwbaarheid en persoonlijke aandacht.
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold-gradient hover:text-black transition-all">
                                 <Facebook className="w-5 h-5" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold-gradient hover:text-black transition-all">
                                 <Instagram className="w-5 h-5" />
                             </a>
-                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold hover:text-black transition-all">
+                            <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold-gradient hover:text-black transition-all">
                                 <Linkedin className="w-5 h-5" />
                             </a>
                         </div>
@@ -29,12 +29,12 @@ export function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-gold pl-4">Snelle Links</h3>
+                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-gold-gradient pl-4 border-image-gold-gradient">Snelle Links</h3>
                         <ul className="space-y-3">
                             {["Home", "Voorraad", "Diensten", "Over ons", "Contact"].map((item) => (
                                 <li key={item}>
-                                    <Link href={`/${item.toLowerCase().replace(" ", "-") === "home" ? "" : item.toLowerCase().replace(" ", "-")}`} className="text-gray-400 hover:text-gold transition-colors flex items-center gap-2">
-                                        <span className="w-1.5 h-1.5 bg-gold rounded-full" />
+                                    <Link href={`/${item.toLowerCase().replace(" ", "-") === "home" ? "" : item.toLowerCase().replace(" ", "-")}`} className="text-gray-400 hover:text-gold-gradient transition-colors flex items-center gap-2 group">
+                                        <span className="w-1.5 h-1.5 bg-gold group-hover:bg-gold-gradient rounded-full" />
                                         {item}
                                     </Link>
                                 </li>
@@ -44,12 +44,12 @@ export function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-gold pl-4">Diensten</h3>
+                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-gold-gradient pl-4 border-image-gold-gradient">Diensten</h3>
                         <ul className="space-y-3">
                             {["Inkoop & Verkoop", "Onderhoud & Reparatie", "APK Keuring", "Airco Service", "Diagnose"].map((item) => (
                                 <li key={item}>
-                                    <Link href="/diensten" className="text-gray-400 hover:text-gold transition-colors flex items-center gap-2">
-                                        <span className="w-1.5 h-1.5 bg-gold rounded-full" />
+                                    <Link href="/diensten" className="text-gray-400 hover:text-gold-gradient transition-colors flex items-center gap-2 group">
+                                        <span className="w-1.5 h-1.5 bg-gold group-hover:bg-gold-gradient rounded-full" />
                                         {item}
                                     </Link>
                                 </li>
@@ -59,10 +59,10 @@ export function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-gold pl-4">Contact</h3>
+                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-gold-gradient pl-4 border-image-gold-gradient">Contact</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3 text-gray-400">
-                                <MapPin className="w-5 h-5 text-gold shrink-0 mt-1" />
+                                <MapPin className="w-5 h-5 text-gold-gradient shrink-0 mt-1" />
                                 <span>
                                     Autopark Lelystad<br />
                                     Straatnaam 123<br />
@@ -70,11 +70,11 @@ export function Footer() {
                                 </span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400">
-                                <Phone className="w-5 h-5 text-gold shrink-0" />
+                                <Phone className="w-5 h-5 text-gold-gradient shrink-0" />
                                 <a href="tel:+31612345678" className="hover:text-white transition-colors">06 1234 5678</a>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400">
-                                <Mail className="w-5 h-5 text-gold shrink-0" />
+                                <Mail className="w-5 h-5 text-gold-gradient shrink-0" />
                                 <a href="mailto:info@autoparklelystad.nl" className="hover:text-white transition-colors">info@autoparklelystad.nl</a>
                             </li>
                         </ul>

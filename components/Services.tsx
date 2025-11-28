@@ -31,7 +31,7 @@ export function Services() {
         <section className="py-24 bg-black relative">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-gold text-sm font-bold uppercase tracking-widest mb-2">Onze Expertise</h2>
+                    <h2 className="text-gold-gradient text-sm font-bold uppercase tracking-widest mb-2">Onze Expertise</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-white uppercase tracking-tight">Waarom Autopark Lelystad?</h3>
                 </div>
 
@@ -43,10 +43,10 @@ export function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="group p-8 border border-white/10 bg-white/5 hover:bg-white/10 hover:border-gold/50 transition-all duration-300"
+                            className="group p-8 border border-white/10 bg-white/5 hover:bg-white/10 hover:border-gold-gradient transition-all duration-300 relative"
                         >
-                            <div className="w-12 h-12 bg-black border border-gold/30 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <service.icon className="w-6 h-6 text-gold" />
+                            <div className="w-12 h-12 bg-black border border-gold/30 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-gold-gradient">
+                                <service.icon className="w-6 h-6 text-gold group-hover:text-gold-gradient" />
                             </div>
                             <h4 className="text-xl font-bold text-white mb-4 uppercase">{service.title}</h4>
                             <p className="text-gray-400 leading-relaxed text-sm">
