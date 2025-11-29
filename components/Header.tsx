@@ -112,7 +112,7 @@ export function Header() {
                             <div className="absolute inset-0 bg-anthracite-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                             {/* Text */}
-                            <span className="relative z-10 font-bold uppercase text-sm tracking-wider text-anthracite-gradient group-hover:text-black group-hover:[background:none] group-hover:[-webkit-text-fill-color:black] transition-all duration-300">
+                            <span className="relative z-10 font-bold uppercase text-sm tracking-wider text-anthracite-gradient group-hover:text-white group-hover:[background:none] group-hover:[-webkit-text-fill-color:white] transition-all duration-300">
                                 Contact
                             </span>
                         </Link>
