@@ -2,35 +2,39 @@
 
 
 import { motion } from "framer-motion";
-import { Globe, Car, ClipboardCheck, Banknote, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const services = [
     {
         title: "Import & Export",
         description: "Volledige begeleiding bij het importeren en exporteren van exclusieve voertuigen. Wij regelen alle documentatie en transport.",
-        icon: Globe,
+        d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z",
+        viewBox: "0 0 24 24",
         href: "/diensten/import-export",
         image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=2670&auto=format&fit=crop"
     },
     {
         title: "Taxatie & Schade",
         description: "Professionele taxatierapporten en vakkundig schadeherstel. Uw auto in topconditie, met behoud van waarde.",
-        icon: ClipboardCheck,
+        d: "M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-2 14l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z",
+        viewBox: "0 0 24 24",
         href: "/diensten/taxatie-schade",
         image: "https://images.unsplash.com/photo-1599256621730-535171e28e50?q=80&w=2574&auto=format&fit=crop"
     },
     {
         title: "Aankoopadvies",
         description: "Deskundig advies bij de aanschaf van uw droomauto. Wij inspecteren, onderhandelen en adviseren voor de beste deal.",
-        icon: Car,
+        d: "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z",
+        viewBox: "0 0 24 24",
         href: "/diensten/aankoopadvies",
         image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2670&auto=format&fit=crop"
     },
     {
         title: "Financiering",
         description: "Flexibele financieringsoplossingen op maat. Realiseer uw droom met onze aantrekkelijke lease- en financieringsopties.",
-        icon: Banknote,
+        d: "M4 6h16v12H4zm2 2v4h12V8H6zm2 5h8v2H8v-2zm-2-7h12v2H6V6z",
+        viewBox: "0 0 24 24",
         href: "/diensten/financiering",
         image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2626&auto=format&fit=crop"
     },
@@ -86,7 +90,11 @@ export default function DienstenPage() {
                                     <div className="absolute inset-0 p-10 flex flex-col justify-end">
                                         <div className="mb-auto">
                                             <div className="w-16 h-16 bg-black/50 backdrop-blur-sm border border-anthracite/30 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-anthracite-gradient group-hover:bg-anthracite/10">
-                                                <service.icon className="w-8 h-8 text-anthracite group-hover:text-white transition-colors" />
+                                                <SilverIcon
+                                                    d={service.d}
+                                                    viewBox={service.viewBox}
+                                                    className="w-8 h-8 bg-anthracite-gradient group-hover:bg-none group-hover:bg-white transition-all duration-300"
+                                                />
                                             </div>
                                         </div>
 
@@ -109,5 +117,25 @@ export default function DienstenPage() {
                 </div>
             </section>
         </main>
+    );
+}
+
+function SilverIcon({ d, viewBox, className = "w-6 h-6" }: { d: string; viewBox: string; className?: string }) {
+    const svgData = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='${viewBox}'><path d='${d}' fill='black'/></svg>`;
+
+    return (
+        <div
+            className={className}
+            style={{
+                maskImage: `url("${svgData}")`,
+                maskSize: "contain",
+                maskRepeat: "no-repeat",
+                maskPosition: "center",
+                WebkitMaskImage: `url("${svgData}")`,
+                WebkitMaskSize: "contain",
+                WebkitMaskRepeat: "no-repeat",
+                WebkitMaskPosition: "center",
+            }}
+        />
     );
 }
