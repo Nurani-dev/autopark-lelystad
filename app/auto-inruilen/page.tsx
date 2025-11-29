@@ -138,7 +138,7 @@ export default function AutoInruilenPage() {
     const prevStep = () => setStep((prev) => prev - 1);
 
     return (
-        <main className="pt-24 min-h-screen bg-black">
+        <main className="pt-24 min-h-screen bg-white">
             <section className="py-12 relative overflow-hidden">
                 {/* Ambient Glow */}
                 <div className="neon-glow top-[10%] left-1/2 -translate-x-1/2 opacity-30" />
@@ -148,10 +148,10 @@ export default function AutoInruilenPage() {
                         {/* New Header Section */}
                         <div className="text-center mb-8">
                             <TradeInAnimation />
-                            <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 uppercase tracking-tight">
+                            <h1 className="text-4xl md:text-5xl font-bold text-black mb-2 uppercase tracking-tight">
                                 Auto <span className="text-anthracite-gradient">Inruilen</span>
                             </h1>
-                            <p className="text-xl text-gray-400">Ontvang een passend voorstel</p>
+                            <p className="text-xl text-gray-600">Ontvang een passend voorstel</p>
                         </div>
 
                         {/* Progress Steps */}
@@ -163,7 +163,7 @@ export default function AutoInruilenPage() {
                                             "w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 border-2",
                                             step >= i
                                                 ? "bg-anthracite border-anthracite text-black shadow-[0_0_15px_rgba(212,175,55,0.4)]"
-                                                : "bg-transparent border-white/20 text-gray-500"
+                                                : "bg-white border-gray-300 text-gray-400"
                                         )}
                                     >
                                         {step > i ? <Check className="w-5 h-5" /> : i}
@@ -172,7 +172,7 @@ export default function AutoInruilenPage() {
                                         <div
                                             className={cn(
                                                 "w-12 h-0.5 mx-2 transition-all duration-300",
-                                                step > i ? "bg-anthracite" : "bg-white/10"
+                                                step > i ? "bg-anthracite" : "bg-gray-200"
                                             )}
                                         />
                                     )}
@@ -180,7 +180,7 @@ export default function AutoInruilenPage() {
                             ))}
                         </div>
 
-                        <div className="bg-zinc-900/50 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 relative overflow-hidden">
+                        <div className="bg-zinc-950 border border-black/10 rounded-2xl p-8 md:p-12 relative overflow-hidden shadow-2xl">
                             <AnimatePresence mode="wait">
                                 {/* STEP 1: CHOICE */}
                                 {step === 1 && (
