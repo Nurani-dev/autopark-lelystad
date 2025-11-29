@@ -1,17 +1,26 @@
 "use client";
 
-import { PageHeader } from "@/components/PageHeader";
+import { motion } from "framer-motion";
 import { ContactAnimation } from "@/components/ContactAnimation";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export default function ContactPage() {
     return (
         <main>
-            <PageHeader
-                title="Contact"
-                subtitle="Neem contact op"
-                image="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2583&auto=format&fit=crop"
-            />
+            <section className="pt-32 pb-4 container mx-auto px-4 text-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                >
+                    <h2 className="text-gold-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
+                        Neem contact op
+                    </h2>
+                    <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase">
+                        Contact
+                    </h1>
+                </motion.div>
+            </section>
 
             <section className="py-24 relative overflow-hidden">
                 {/* Ambient Glow */}

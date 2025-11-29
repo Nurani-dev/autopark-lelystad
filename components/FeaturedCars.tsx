@@ -58,7 +58,7 @@ export function FeaturedCars() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {featuredCars.map((car, index) => (
-                        <CarCard key={car.id} car={car} index={index} />
+                        <CarCard key={car.id} car={car} index={index} priority={true} />
                     ))}
                 </div>
             </div>

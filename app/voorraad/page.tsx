@@ -27,7 +27,7 @@ export default function VoorraadPage() {
                 <div className="container mx-auto px-4">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {cars.map((car, index) => (
-                            <CarCard key={car.id} car={car} index={index} />
+                            <CarCard key={car.id} car={car} index={index} priority={index < 6} />
                         ))}
                     </div>
                 </div>
