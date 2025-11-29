@@ -18,9 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="nl">
-      <body className={`${inter.className} antialiased bg-background text-foreground`}>
+      <body className={`${inter.className} antialiased relative`}>
+        {/* Ambient Neon Glows */}
+        <div className="neon-glow -top-[200px] -left-[200px] opacity-40" />
+        <div className="neon-glow top-[40%] -right-[200px] opacity-30" />
+        <div className="neon-glow bottom-[10%] -left-[100px] opacity-20" />
+
         <Header />
-        {children}
+        <main className="relative z-10">{children}</main>
         <Footer />
       </body>
     </html>

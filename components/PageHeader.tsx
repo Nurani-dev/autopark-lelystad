@@ -5,19 +5,21 @@ import { motion } from "framer-motion";
 interface PageHeaderProps {
     title: string;
     subtitle?: string;
-    image: string;
+    image?: string;
 }
 
 export function PageHeader({ title, subtitle, image }: PageHeaderProps) {
     return (
-        <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-black/60 z-10" />
-                <div
-                    className="w-full h-full bg-cover bg-center"
-                    style={{ backgroundImage: `url(${image})` }}
-                />
-            </div>
+        <section className={`relative flex items-center justify-center overflow-hidden ${image ? 'h-[40vh] min-h-[400px]' : 'pt-32 pb-12'}`}>
+            {image && (
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 bg-black/60 z-10" />
+                    <div
+                        className="w-full h-full bg-cover bg-center"
+                        style={{ backgroundImage: `url(${image})` }}
+                    />
+                </div>
+            )}
 
             <div className="container mx-auto px-4 relative z-20 text-center">
                 <motion.div

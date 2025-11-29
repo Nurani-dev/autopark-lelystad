@@ -40,7 +40,9 @@ export function HeroSlideshow() {
                     />
                 </motion.div>
             </AnimatePresence>
-            <div className="absolute inset-0 bg-black/60 z-10" />
+            {/* Cinematic Overlays */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 z-10" />
+            <div className="absolute inset-0 bg-black/20 z-10 mix-blend-multiply" />
         </div>
     );
 }

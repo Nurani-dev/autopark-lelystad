@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <FeaturedCars />
       <Services />
       <About />
-      <FeaturedCars />
     </main>
   );
 }

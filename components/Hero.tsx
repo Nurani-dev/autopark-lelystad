@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import { HeroSlideshow } from "./HeroSlideshow";
 
 export function Hero() {
@@ -52,13 +52,11 @@ export function Hero() {
 
             {/* Scroll Indicator */}
             <motion.div
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20"
+                className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 pointer-events-none"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
             >
-                <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center p-2">
-                    <div className="w-1 h-2 bg-gold-gradient rounded-full" />
-                </div>
+                <ChevronDown className="w-12 h-12 text-gold opacity-80" />
             </motion.div>
         </section >
     );
