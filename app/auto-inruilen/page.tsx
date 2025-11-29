@@ -149,7 +149,7 @@ export default function AutoInruilenPage() {
                         <div className="text-center mb-8">
                             <TradeInAnimation />
                             <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 uppercase tracking-tight">
-                                Auto <span className="text-gold-gradient">Inruilen</span>
+                                Auto <span className="text-anthracite-gradient">Inruilen</span>
                             </h1>
                             <p className="text-xl text-gray-400">Ontvang een passend voorstel</p>
                         </div>
@@ -162,7 +162,7 @@ export default function AutoInruilenPage() {
                                         className={cn(
                                             "w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 border-2",
                                             step >= i
-                                                ? "bg-gold border-gold text-black shadow-[0_0_15px_rgba(212,175,55,0.4)]"
+                                                ? "bg-anthracite border-anthracite text-black shadow-[0_0_15px_rgba(212,175,55,0.4)]"
                                                 : "bg-transparent border-white/20 text-gray-500"
                                         )}
                                     >
@@ -172,7 +172,7 @@ export default function AutoInruilenPage() {
                                         <div
                                             className={cn(
                                                 "w-12 h-0.5 mx-2 transition-all duration-300",
-                                                step > i ? "bg-gold" : "bg-white/10"
+                                                step > i ? "bg-anthracite" : "bg-white/10"
                                             )}
                                         />
                                     )}
@@ -202,12 +202,12 @@ export default function AutoInruilenPage() {
                                                 className={cn(
                                                     "p-8 rounded-xl border-2 transition-all duration-300 text-left group relative overflow-hidden",
                                                     formData.type === "inruil"
-                                                        ? "border-gold bg-gold/10 shadow-[0_0_30px_rgba(212,175,55,0.1)]"
-                                                        : "border-white/10 hover:border-gold/50 bg-black/40"
+                                                        ? "border-anthracite bg-anthracite/10 shadow-[0_0_30px_rgba(212,175,55,0.1)]"
+                                                        : "border-white/10 hover:border-anthracite/50 bg-black/40"
                                                 )}
                                             >
                                                 <div className="relative z-10">
-                                                    <Car className={cn("w-10 h-10 mb-4 transition-colors", formData.type === "inruil" ? "text-gold" : "text-gray-400 group-hover:text-gold")} />
+                                                    <Car className={cn("w-10 h-10 mb-4 transition-colors", formData.type === "inruil" ? "text-anthracite" : "text-gray-400 group-hover:text-anthracite")} />
                                                     <h3 className="text-xl font-bold text-white mb-2">Auto Inruilen</h3>
                                                     <p className="text-sm text-gray-400">Ik wil mijn huidige auto inruilen op een auto uit jullie voorraad.</p>
                                                 </div>
@@ -218,12 +218,12 @@ export default function AutoInruilenPage() {
                                                 className={cn(
                                                     "p-8 rounded-xl border-2 transition-all duration-300 text-left group relative overflow-hidden",
                                                     formData.type === "verkoop"
-                                                        ? "border-gold bg-gold/10 shadow-[0_0_30px_rgba(212,175,55,0.1)]"
-                                                        : "border-white/10 hover:border-gold/50 bg-black/40"
+                                                        ? "border-anthracite bg-anthracite/10 shadow-[0_0_30px_rgba(212,175,55,0.1)]"
+                                                        : "border-white/10 hover:border-anthracite/50 bg-black/40"
                                                 )}
                                             >
                                                 <div className="relative z-10">
-                                                    <Send className={cn("w-10 h-10 mb-4 transition-colors", formData.type === "verkoop" ? "text-gold" : "text-gray-400 group-hover:text-gold")} />
+                                                    <Send className={cn("w-10 h-10 mb-4 transition-colors", formData.type === "verkoop" ? "text-anthracite" : "text-gray-400 group-hover:text-anthracite")} />
                                                     <h3 className="text-xl font-bold text-white mb-2">Auto Verkopen</h3>
                                                     <p className="text-sm text-gray-400">Ik wil mijn auto verkopen zonder een nieuwe aan te schaffen.</p>
                                                 </div>
@@ -237,12 +237,12 @@ export default function AutoInruilenPage() {
                                                 animate={{ opacity: 1, height: "auto" }}
                                                 className="pt-6 border-t border-white/10"
                                             >
-                                                <label className="block text-sm font-medium text-gold uppercase mb-3">Welke auto heeft u op het oog?</label>
+                                                <label className="block text-sm font-medium text-anthracite uppercase mb-3">Welke auto heeft u op het oog?</label>
                                                 <select
                                                     name="targetCar"
                                                     value={formData.targetCar}
                                                     onChange={handleInputChange}
-                                                    className="w-full bg-black border border-white/20 p-4 text-white focus:border-gold focus:outline-none transition-colors rounded-xl appearance-none cursor-pointer hover:border-gold/50"
+                                                    className="w-full bg-black border border-white/20 p-4 text-white focus:border-anthracite focus:outline-none transition-colors rounded-xl appearance-none cursor-pointer hover:border-anthracite/50"
                                                 >
                                                     <option value="">Selecteer een auto uit onze voorraad...</option>
                                                     {MOCK_STOCK.map((car) => (
@@ -255,7 +255,7 @@ export default function AutoInruilenPage() {
                                         <div className="flex justify-end pt-8">
                                             <button
                                                 onClick={nextStep}
-                                                className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-bold uppercase hover:bg-gold hover:text-white transition-all duration-300"
+                                                className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-bold uppercase hover:bg-anthracite hover:text-white transition-all duration-300"
                                             >
                                                 Volgende Stap <ChevronRight className="w-4 h-4" />
                                             </button>
@@ -279,8 +279,8 @@ export default function AutoInruilenPage() {
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="space-y-2">
-                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.kenteken ? "text-red-500" : "text-gold")}>
-                                                    Kenteken <span className={cn("text-lg leading-none", errors.kenteken ? "text-red-500" : "text-gold")}>*</span>
+                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.kenteken ? "text-red-500" : "text-anthracite")}>
+                                                    Kenteken <span className={cn("text-lg leading-none", errors.kenteken ? "text-red-500" : "text-anthracite")}>*</span>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -289,14 +289,14 @@ export default function AutoInruilenPage() {
                                                     onChange={handleInputChange}
                                                     className={cn(
                                                         "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg uppercase",
-                                                        errors.kenteken ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                        errors.kenteken ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                     )}
                                                     placeholder="XX-XX-XX"
                                                 />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.kilometerstand ? "text-red-500" : "text-gold")}>
-                                                    Kilometerstand <span className={cn("text-lg leading-none", errors.kilometerstand ? "text-red-500" : "text-gold")}>*</span>
+                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.kilometerstand ? "text-red-500" : "text-anthracite")}>
+                                                    Kilometerstand <span className={cn("text-lg leading-none", errors.kilometerstand ? "text-red-500" : "text-anthracite")}>*</span>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -305,14 +305,14 @@ export default function AutoInruilenPage() {
                                                     onChange={handleInputChange}
                                                     className={cn(
                                                         "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg",
-                                                        errors.kilometerstand ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                        errors.kilometerstand ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                     )}
                                                     placeholder="0 km"
                                                 />
                                             </div>
                                             <div className="space-y-2">
-                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.transmissie ? "text-red-500" : "text-gold")}>
-                                                    Transmissie <span className={cn("text-lg leading-none", errors.transmissie ? "text-red-500" : "text-gold")}>*</span>
+                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.transmissie ? "text-red-500" : "text-anthracite")}>
+                                                    Transmissie <span className={cn("text-lg leading-none", errors.transmissie ? "text-red-500" : "text-anthracite")}>*</span>
                                                 </label>
                                                 <select
                                                     name="transmissie"
@@ -320,7 +320,7 @@ export default function AutoInruilenPage() {
                                                     onChange={handleInputChange}
                                                     className={cn(
                                                         "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg appearance-none",
-                                                        errors.transmissie ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                        errors.transmissie ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                     )}
                                                 >
                                                     <option value="">Maak een keuze...</option>
@@ -329,8 +329,8 @@ export default function AutoInruilenPage() {
                                                 </select>
                                             </div>
                                             <div className="space-y-2">
-                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.onderhoud ? "text-red-500" : "text-gold")}>
-                                                    Onderhoudshistorie <span className={cn("text-lg leading-none", errors.onderhoud ? "text-red-500" : "text-gold")}>*</span>
+                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.onderhoud ? "text-red-500" : "text-anthracite")}>
+                                                    Onderhoudshistorie <span className={cn("text-lg leading-none", errors.onderhoud ? "text-red-500" : "text-anthracite")}>*</span>
                                                 </label>
                                                 <select
                                                     name="onderhoud"
@@ -338,7 +338,7 @@ export default function AutoInruilenPage() {
                                                     onChange={handleInputChange}
                                                     className={cn(
                                                         "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg appearance-none",
-                                                        errors.onderhoud ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                        errors.onderhoud ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                     )}
                                                 >
                                                     <option value="">Maak een keuze...</option>
@@ -349,8 +349,8 @@ export default function AutoInruilenPage() {
                                                 </select>
                                             </div>
                                             <div className="space-y-2 md:col-span-2">
-                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.laatsteBeurtKm ? "text-red-500" : "text-gold")}>
-                                                    Kilometerstand laatste beurt <span className={cn("text-lg leading-none", errors.laatsteBeurtKm ? "text-red-500" : "text-gold")}>*</span>
+                                                <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.laatsteBeurtKm ? "text-red-500" : "text-anthracite")}>
+                                                    Kilometerstand laatste beurt <span className={cn("text-lg leading-none", errors.laatsteBeurtKm ? "text-red-500" : "text-anthracite")}>*</span>
                                                 </label>
                                                 <input
                                                     type="text"
@@ -359,19 +359,19 @@ export default function AutoInruilenPage() {
                                                     onChange={handleInputChange}
                                                     className={cn(
                                                         "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg",
-                                                        errors.laatsteBeurtKm ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                        errors.laatsteBeurtKm ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                     )}
                                                     placeholder="Bijv. 120.000 km"
                                                 />
                                             </div>
                                             <div className="space-y-2 md:col-span-2">
-                                                <label className="text-xs font-bold text-gold uppercase tracking-wider">Opmerkingen / Staat van de auto</label>
+                                                <label className="text-xs font-bold text-anthracite uppercase tracking-wider">Opmerkingen / Staat van de auto</label>
                                                 <textarea
                                                     name="opmerkingen"
                                                     value={formData.opmerkingen}
                                                     onChange={handleInputChange}
                                                     rows={4}
-                                                    className="w-full bg-black border border-white/10 p-3 text-white focus:border-gold focus:outline-none transition-colors rounded-lg"
+                                                    className="w-full bg-black border border-white/10 p-3 text-white focus:border-anthracite focus:outline-none transition-colors rounded-lg"
                                                     placeholder="Beschrijf eventuele schades, opties of bijzonderheden..."
                                                 />
                                             </div>
@@ -386,7 +386,7 @@ export default function AutoInruilenPage() {
                                             </button>
                                             <button
                                                 onClick={nextStep}
-                                                className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-bold uppercase hover:bg-gold hover:text-white transition-all duration-300"
+                                                className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-bold uppercase hover:bg-anthracite hover:text-white transition-all duration-300"
                                             >
                                                 Naar Foto's <ChevronRight className="w-4 h-4" />
                                             </button>
@@ -413,7 +413,7 @@ export default function AutoInruilenPage() {
                                             <label
                                                 className={cn(
                                                     "block bg-black/40 border-2 border-dashed rounded-2xl p-8 text-center transition-colors group cursor-pointer relative overflow-hidden",
-                                                    fileError ? "border-red-500" : "border-gold/30 hover:border-gold/60"
+                                                    fileError ? "border-red-500" : "border-anthracite/30 hover:border-anthracite/60"
                                                 )}
                                             >
                                                 <input
@@ -423,18 +423,18 @@ export default function AutoInruilenPage() {
                                                     className="hidden"
                                                     onChange={handleFileChange}
                                                 />
-                                                <div className="absolute inset-0 bg-gold/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
+                                                <div className="absolute inset-0 bg-anthracite/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
 
                                                 <div className="relative z-10 space-y-4">
-                                                    <div className="w-16 h-16 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                                                        <Camera className="w-8 h-8 text-gold" />
+                                                    <div className="w-16 h-16 bg-anthracite/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                                                        <Camera className="w-8 h-8 text-anthracite" />
                                                     </div>
                                                     <h3 className="text-xl font-bold text-white uppercase">Vergeet niet uw foto's toe te voegen</h3>
                                                     <p className="text-gray-400 max-w-md mx-auto">
                                                         Kunt u ons van maximaal 10 foto's voorzien? Graag duidelijke foto's van binnen en buitenkant!
                                                     </p>
 
-                                                    <div className="flex flex-col gap-2 text-xs text-gold/80 bg-gold/5 p-4 rounded-lg max-w-md mx-auto border border-gold/10">
+                                                    <div className="flex flex-col gap-2 text-xs text-anthracite/80 bg-anthracite/5 p-4 rounded-lg max-w-md mx-auto border border-anthracite/10">
                                                         <div className="flex items-center gap-2 justify-center">
                                                             <AlertCircle className="w-4 h-4" />
                                                             <span className="font-bold">LET OP!</span>
@@ -443,7 +443,7 @@ export default function AutoInruilenPage() {
                                                         <p>De foto's mogen maximaal 8 mb zijn.</p>
                                                     </div>
 
-                                                    <div className="mt-4 inline-block px-6 py-2 bg-gold/20 text-gold border border-gold/50 rounded-full text-sm font-bold uppercase group-hover:bg-gold group-hover:text-black transition-all">
+                                                    <div className="mt-4 inline-block px-6 py-2 bg-anthracite/20 text-anthracite border border-anthracite/50 rounded-full text-sm font-bold uppercase group-hover:bg-anthracite group-hover:text-black transition-all">
                                                         Selecteer Foto's
                                                     </div>
                                                 </div>
@@ -483,8 +483,8 @@ export default function AutoInruilenPage() {
                                             <h3 className="text-xl font-bold text-white uppercase mb-6">Uw Contactgegevens</h3>
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                                 <div className="space-y-2">
-                                                    <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.naam ? "text-red-500" : "text-gold")}>
-                                                        Naam <span className={cn("text-lg leading-none", errors.naam ? "text-red-500" : "text-gold")}>*</span>
+                                                    <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.naam ? "text-red-500" : "text-anthracite")}>
+                                                        Naam <span className={cn("text-lg leading-none", errors.naam ? "text-red-500" : "text-anthracite")}>*</span>
                                                     </label>
                                                     <input
                                                         type="text"
@@ -493,14 +493,14 @@ export default function AutoInruilenPage() {
                                                         onChange={handleInputChange}
                                                         className={cn(
                                                             "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg",
-                                                            errors.naam ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                            errors.naam ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                         )}
                                                         placeholder="Uw naam"
                                                     />
                                                 </div>
                                                 <div className="space-y-2">
-                                                    <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.telefoon ? "text-red-500" : "text-gold")}>
-                                                        Telefoon <span className={cn("text-lg leading-none", errors.telefoon ? "text-red-500" : "text-gold")}>*</span>
+                                                    <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.telefoon ? "text-red-500" : "text-anthracite")}>
+                                                        Telefoon <span className={cn("text-lg leading-none", errors.telefoon ? "text-red-500" : "text-anthracite")}>*</span>
                                                     </label>
                                                     <input
                                                         type="tel"
@@ -509,14 +509,14 @@ export default function AutoInruilenPage() {
                                                         onChange={handleInputChange}
                                                         className={cn(
                                                             "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg",
-                                                            errors.telefoon ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                            errors.telefoon ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                         )}
                                                         placeholder="06 1234 5678"
                                                     />
                                                 </div>
                                                 <div className="space-y-2 md:col-span-2">
-                                                    <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.email ? "text-red-500" : "text-gold")}>
-                                                        E-mail <span className={cn("text-lg leading-none", errors.email ? "text-red-500" : "text-gold")}>*</span>
+                                                    <label className={cn("text-xs font-bold uppercase tracking-wider flex items-center gap-1", errors.email ? "text-red-500" : "text-anthracite")}>
+                                                        E-mail <span className={cn("text-lg leading-none", errors.email ? "text-red-500" : "text-anthracite")}>*</span>
                                                     </label>
                                                     <input
                                                         type="email"
@@ -525,7 +525,7 @@ export default function AutoInruilenPage() {
                                                         onChange={handleInputChange}
                                                         className={cn(
                                                             "w-full bg-black border p-3 text-white focus:outline-none transition-colors rounded-lg",
-                                                            errors.email ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-gold"
+                                                            errors.email ? "border-red-500 focus:border-red-500" : "border-white/10 focus:border-anthracite"
                                                         )}
                                                         placeholder="naam@voorbeeld.nl"
                                                     />
@@ -542,7 +542,7 @@ export default function AutoInruilenPage() {
                                             </button>
                                             <button
                                                 onClick={handleSubmit}
-                                                className="w-full md:w-auto flex items-center justify-center gap-2 bg-gold text-black px-8 py-4 rounded-full font-bold uppercase hover:bg-gold-light transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)]"
+                                                className="w-full md:w-auto flex items-center justify-center gap-2 bg-anthracite text-black px-8 py-4 rounded-full font-bold uppercase hover:bg-anthracite-light transition-all duration-300 shadow-[0_0_20px_rgba(212,175,55,0.3)] hover:shadow-[0_0_30px_rgba(212,175,55,0.5)]"
                                             >
                                                 Verstuur Aanvraag <Send className="w-4 h-4" />
                                             </button>

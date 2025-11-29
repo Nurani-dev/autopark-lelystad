@@ -1,8 +1,8 @@
 export default function PrivacyPage() {
     return (
-        <div className="min-h-screen bg-black text-white selection:bg-gold/30">
+        <div className="min-h-screen bg-black text-white selection:bg-anthracite/30">
             <div className="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
-                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-gold-gradient">Privacyverklaring</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-anthracite-gradient">Privacyverklaring</h1>
 
                 <div className="space-y-8 text-gray-300 leading-relaxed">
                     <section className="space-y-4">
@@ -141,7 +141,7 @@ export default function PrivacyPage() {
                             Autopark Lelystad BV<br />
                             Vaartweg 45E<br />
                             8243PD Lelystad<br />
-                            <a href="mailto:info@autoparklelystad.nl" className="text-gold hover:text-white transition-colors">info@autoparklelystad.nl</a>
+                            <a href="mailto:info@autoparklelystad.nl" className="text-anthracite hover:text-white transition-colors">info@autoparklelystad.nl</a>
                         </p>
                     </section>
                 </div>

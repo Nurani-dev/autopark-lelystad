@@ -34,7 +34,7 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
                 {/* Back Button */}
                 <Link
                     href="/voorraad"
-                    className="inline-flex items-center gap-2 text-white/60 hover:text-gold transition-colors mb-8 group"
+                    className="inline-flex items-center gap-2 text-white/60 hover:text-anthracite transition-colors mb-8 group"
                 >
                     <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
                     <span className="uppercase tracking-wider text-sm font-medium">Terug naar overzicht</span>
@@ -67,7 +67,7 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
                                     className={cn(
                                         "relative aspect-[16/10] rounded-md overflow-hidden border transition-all duration-300",
                                         activeImage === index
-                                            ? "border-gold opacity-100"
+                                            ? "border-anthracite opacity-100"
                                             : "border-white/10 opacity-60 hover:opacity-100"
                                     )}
                                 >
@@ -95,7 +95,7 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 {car.features.map((feature, index) => (
                                     <div key={index} className="flex items-center gap-3 text-white/80">
-                                        <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0" />
+                                        <CheckCircle2 className="w-5 h-5 text-anthracite flex-shrink-0" />
                                         <span>{feature}</span>
                                     </div>
                                 ))}
@@ -110,7 +110,7 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
                             <h1 className="text-3xl font-bold text-white mb-2">
                                 {car.make} {car.model}
                             </h1>
-                            <div className="text-gold text-3xl font-bold mb-6">
+                            <div className="text-anthracite text-3xl font-bold mb-6">
                                 € {car.price.toLocaleString("nl-NL")}
                             </div>
 
@@ -162,7 +162,7 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
                             <div className="space-y-4">
                                 <a
                                     href="tel:+31612345678"
-                                    className="flex items-center justify-center gap-2 w-full bg-gold text-black font-bold py-4 rounded hover:bg-white transition-colors uppercase tracking-wider text-sm"
+                                    className="flex items-center justify-center gap-2 w-full bg-anthracite text-black font-bold py-4 rounded hover:bg-white transition-colors uppercase tracking-wider text-sm"
                                 >
                                     <Phone className="w-4 h-4" />
                                     Bel direct
@@ -178,7 +178,7 @@ export default function CarDetailPage({ params }: { params: Promise<{ id: string
                         </div>
 
                         {/* Share */}
-                        <button className="flex items-center justify-center gap-2 w-full text-white/40 hover:text-gold transition-colors text-sm uppercase tracking-wider">
+                        <button className="flex items-center justify-center gap-2 w-full text-white/40 hover:text-anthracite transition-colors text-sm uppercase tracking-wider">
                             <Share2 className="w-4 h-4" />
                             Deel deze auto
                         </button>

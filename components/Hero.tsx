@@ -19,11 +19,11 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "circOut" }}
             >
-                <h2 className="text-gold-gradient text-lg md:text-xl font-medium uppercase tracking-[0.2em] mb-4">
+                <h2 className="text-anthracite-gradient text-lg md:text-xl font-medium uppercase tracking-[0.2em] mb-4">
                     Exclusieve Occasions & Service
                 </h2>
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tighter uppercase">
-                    Autopark <span className="text-gold-gradient">Lelystad</span>
+                    Autopark <span className="text-anthracite-gradient">Lelystad</span>
                 </h1>
                 <p className="text-gray-300 text-lg md:text-2xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
                     Jouw auto, onze zorg. Wij bieden een selectie van premium voertuigen en hoogwaardige service op maat.
@@ -32,7 +32,7 @@ export function Hero() {
                 <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
                     <Link
                         href="/voorraad"
-                        className="group relative px-8 py-4 bg-gold-gradient text-black font-bold uppercase tracking-wider overflow-hidden"
+                        className="group relative px-8 py-4 bg-anthracite-gradient text-black font-bold uppercase tracking-wider overflow-hidden rounded-full"
                     >
                         <span className="relative z-10 flex items-center gap-2">
                             Bekijk Voorraad <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -42,7 +42,7 @@ export function Hero() {
 
                     <Link
                         href="/diensten"
-                        className="px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300"
+                        className="px-8 py-4 border border-white/30 text-white font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all duration-300 rounded-full"
                     >
                         Onze Diensten
                     </Link>
@@ -56,7 +56,7 @@ export function Hero() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
             >
-                <ChevronDown className="w-12 h-12 text-gold opacity-80" />
+                <ChevronDown className="w-12 h-12 text-anthracite opacity-80" />
             </motion.div>
         </section >
     );

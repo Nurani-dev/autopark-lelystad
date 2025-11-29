@@ -28,11 +28,11 @@ export function PageHeader({ title, subtitle, image }: PageHeaderProps) {
                     transition={{ duration: 0.8, ease: "circOut" }}
                 >
                     {subtitle && (
-                        <h2 className="text-gold-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
+                        <h2 className="text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
                             {subtitle}
                         </h2>
                     )}
-                    <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase">
+                    <h1 className={`text-4xl md:text-6xl font-bold tracking-tighter uppercase ${image ? 'text-white' : 'text-foreground'}`}>
                         {title}
                     </h1>
                 </motion.div>

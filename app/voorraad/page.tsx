@@ -6,7 +6,7 @@ import { CarCard } from "@/components/CarCard";
 
 export default function VoorraadPage() {
     return (
-        <main className="bg-black min-h-screen">
+        <main className="bg-background min-h-screen transition-colors duration-300">
             <section className="pt-32 pb-12 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -14,10 +14,10 @@ export default function VoorraadPage() {
                     transition={{ duration: 0.8, ease: "circOut" }}
                     className="container mx-auto px-4"
                 >
-                    <h2 className="text-gold-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
+                    <h2 className="text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
                         Exclusieve Occasions
                     </h2>
-                    <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase mb-8">
+                    <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tighter uppercase mb-8">
                         Onze Voorraad
                     </h1>
                 </motion.div>

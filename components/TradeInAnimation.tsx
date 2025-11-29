@@ -19,7 +19,7 @@ export function TradeInAnimation() {
             >
                 <path
                     d="M10 60 L30 40 L60 40 L80 20 L140 20 L170 40 L190 45 L190 70 L170 70 M30 70 L10 70 L10 60"
-                    stroke="#D4AF37"
+                    stroke="#393E46"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -27,7 +27,7 @@ export function TradeInAnimation() {
                 />
                 <motion.path
                     d="M10 60 L30 40 L60 40 L80 20 L140 20 L170 40 L190 45 L190 70 L170 70 M30 70 L10 70 L10 60"
-                    stroke="#D4AF37"
+                    stroke="#393E46"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -36,18 +36,18 @@ export function TradeInAnimation() {
                     transition={{ duration: 2, ease: "easeInOut", repeat: Infinity, repeatType: "reverse" }}
                 />
                 {/* Wheels */}
-                <circle cx="45" cy="70" r="12" stroke="#D4AF37" strokeWidth="2" className="opacity-50" />
-                <circle cx="155" cy="70" r="12" stroke="#D4AF37" strokeWidth="2" className="opacity-50" />
+                <circle cx="45" cy="70" r="12" stroke="#393E46" strokeWidth="2" className="opacity-50" />
+                <circle cx="155" cy="70" r="12" stroke="#393E46" strokeWidth="2" className="opacity-50" />
                 <motion.circle
                     cx="45" cy="70" r="12"
-                    stroke="#D4AF37" strokeWidth="2"
+                    stroke="#393E46" strokeWidth="2"
                     initial={{ pathLength: 0, rotate: 0 }}
                     animate={{ pathLength: 1, rotate: 360 }}
                     transition={{ duration: 2, ease: "linear", repeat: Infinity }}
                 />
                 <motion.circle
                     cx="155" cy="70" r="12"
-                    stroke="#D4AF37" strokeWidth="2"
+                    stroke="#393E46" strokeWidth="2"
                     initial={{ pathLength: 0, rotate: 0 }}
                     animate={{ pathLength: 1, rotate: 360 }}
                     transition={{ duration: 2, ease: "linear", repeat: Infinity }}
@@ -56,7 +56,7 @@ export function TradeInAnimation() {
 
             {/* Scanning Beam */}
             <motion.div
-                className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-gold to-transparent z-20"
+                className="absolute top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-anthracite to-transparent z-20"
                 initial={{ left: "20%", opacity: 0 }}
                 animate={{
                     left: ["20%", "80%", "20%"],
@@ -67,13 +67,12 @@ export function TradeInAnimation() {
                     ease: "linear",
                     repeat: Infinity
                 }}
-                style={{ filter: "drop-shadow(0 0 8px #D4AF37)" }}
+                style={{ filter: "drop-shadow(0 0 8px #393E46)" }}
             />
 
-            {/* Grid Background */}
             <div className="absolute inset-0 z-0 opacity-20"
                 style={{
-                    backgroundImage: "linear-gradient(#D4AF37 1px, transparent 1px), linear-gradient(90deg, #D4AF37 1px, transparent 1px)",
+                    backgroundImage: "linear-gradient(#393E46 1px, transparent 1px), linear-gradient(90deg, #393E46 1px, transparent 1px)",
                     backgroundSize: "40px 40px",
                     perspective: "500px",
                     transform: "rotateX(60deg) scale(2)"

@@ -38,17 +38,17 @@ const services = [
 
 export default function DienstenPage() {
     return (
-        <main className="bg-black min-h-screen">
+        <main className="bg-background min-h-screen transition-colors duration-300">
             <section className="pt-32 pb-4 container mx-auto px-4 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-gold-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
+                    <h2 className="text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
                         Exclusieve Service op Maat
                     </h2>
-                    <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tighter uppercase">
+                    <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tighter uppercase">
                         Onze Diensten
                     </h1>
                 </motion.div>
@@ -68,7 +68,7 @@ export default function DienstenPage() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.1, duration: 0.5 }}
                                     viewport={{ once: true }}
-                                    className="relative h-[400px] overflow-hidden rounded-sm border border-white/10 group-hover:border-gold-gradient transition-all duration-500"
+                                    className="relative h-[400px] overflow-hidden rounded-sm border border-gray-200 dark:border-white/10 group-hover:border-anthracite-gradient transition-all duration-500"
                                 >
                                     {/* Background Image with Overlay */}
                                     <div className="absolute inset-0">
@@ -77,25 +77,27 @@ export default function DienstenPage() {
                                             alt={service.title}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-40 group-hover:opacity-20"
                                         />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent" />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent dark:from-black dark:via-black/80 dark:to-transparent" />
+                                        {/* Additional gradient for text readability */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-white/90 via-white/50 to-transparent dark:from-black/90 dark:via-black/50 dark:to-transparent" />
                                     </div>
 
                                     {/* Content */}
                                     <div className="absolute inset-0 p-10 flex flex-col justify-end">
                                         <div className="mb-auto">
-                                            <div className="w-16 h-16 bg-black/50 backdrop-blur-sm border border-gold/30 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-gold-gradient group-hover:bg-gold/10">
-                                                <service.icon className="w-8 h-8 text-gold group-hover:text-white transition-colors" />
+                                            <div className="w-16 h-16 bg-black/50 backdrop-blur-sm border border-anthracite/30 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-anthracite-gradient group-hover:bg-anthracite/10">
+                                                <service.icon className="w-8 h-8 text-anthracite group-hover:text-white transition-colors" />
                                             </div>
                                         </div>
 
-                                        <h3 className="text-3xl font-bold text-white mb-4 uppercase tracking-tight group-hover:text-gold-gradient transition-all">
+                                        <h3 className="text-3xl font-bold text-foreground dark:text-white mb-4 uppercase tracking-tight group-hover:text-anthracite-gradient transition-all">
                                             {service.title}
                                         </h3>
-                                        <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-md group-hover:text-gray-300 transition-colors">
+                                        <p className="text-foreground dark:text-gray-300 text-lg leading-relaxed mb-8 max-w-md group-hover:text-foreground dark:group-hover:text-white transition-colors">
                                             {service.description}
                                         </p>
 
-                                        <div className="flex items-center gap-3 text-gold text-sm font-bold uppercase tracking-wider group-hover:gap-5 transition-all">
+                                        <div className="flex items-center gap-3 text-anthracite text-sm font-bold uppercase tracking-wider group-hover:gap-5 transition-all">
                                             <span>Lees Meer</span>
                                             <ArrowRight className="w-5 h-5" />
                                         </div>

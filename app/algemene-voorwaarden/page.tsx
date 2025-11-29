@@ -1,8 +1,8 @@
 export default function TermsPage() {
     return (
-        <div className="min-h-screen bg-black text-white selection:bg-gold/30">
+        <div className="min-h-screen bg-black text-white selection:bg-anthracite/30">
             <div className="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
-                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-gold-gradient">Algemene voorwaarden</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-anthracite-gradient">Algemene voorwaarden</h1>
 
                 <div className="space-y-12 text-gray-300 leading-relaxed">
                     <section className="space-y-4">
