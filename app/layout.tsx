@@ -18,12 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased relative`}>
-        {/* Ambient Neon Glows */}
-        <div className="neon-glow -top-[200px] -left-[200px] opacity-40" />
-        <div className="neon-glow top-[40%] -right-[200px] opacity-30" />
-        <div className="neon-glow bottom-[10%] -left-[100px] opacity-20" />
+    <html lang="nl" suppressHydrationWarning className="overflow-x-hidden">
+      <body className={`${inter.className} antialiased relative overflow-x-hidden`}>
+        {/* Ambient Neon Glows - Wrapped to prevent overflow */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+          <div className="neon-glow -top-[200px] -left-[200px] opacity-40" />
+          <div className="neon-glow top-[40%] -right-[200px] opacity-30" />
+          <div className="neon-glow bottom-[10%] -left-[100px] opacity-20" />
+        </div>
 
         <ThemeProvider
           attribute="class"
