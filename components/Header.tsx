@@ -41,11 +41,8 @@ export function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [isHome]);
 
-    const headerClass = isHome
-        ? (isScrolled
-            ? "bg-background/90 backdrop-blur-xl border-b border-black/10 dark:border-white/10 py-4"
-            : "bg-transparent border-transparent py-6")
-        : "bg-background/90 backdrop-blur-xl border-b border-black/10 dark:border-white/10 py-4";
+    // Always use the solid background style
+    const headerClass = "bg-background/90 backdrop-blur-xl border-b border-black/10 dark:border-white/10 py-4";
 
     return (
         <header
@@ -81,8 +78,7 @@ export function Header() {
                                 key={link.name}
                                 href={link.href}
                                 className={cn(
-                                    "text-sm font-medium uppercase tracking-wide transition-colors relative group",
-                                    isHome && !isScrolled ? "text-white hover:text-white/80" : "text-foreground hover:text-foreground/80"
+                                    "text-sm font-medium uppercase tracking-wide transition-colors relative group text-foreground hover:text-foreground/80"
                                 )}
                             >
                                 <span className="group-hover:text-anthracite-gradient transition-all duration-300">{link.name}</span>

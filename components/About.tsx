@@ -39,7 +39,11 @@ export function About() {
                         viewport={{ once: true }}
                         className="w-full lg:w-1/2"
                     >
-                        <h2 className="text-anthracite-gradient text-sm font-bold uppercase tracking-widest mb-2">Over Autopark Lelystad</h2>
+                        <h2 className="mb-4">
+                            <span className="inline-block bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm font-bold uppercase tracking-widest">
+                                Over Autopark Lelystad
+                            </span>
+                        </h2>
                         <h3 className="text-3xl md:text-4xl font-bold text-black uppercase tracking-tight mb-6">
                             Passie voor <span className="text-anthracite-gradient">Exclusiviteit</span>
                         </h3>

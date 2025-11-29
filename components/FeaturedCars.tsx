@@ -23,9 +23,11 @@ export function FeaturedCars() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            className="text-anthracite-gradient text-sm font-bold uppercase tracking-[0.2em] mb-4"
+                            className="mb-4"
                         >
-                            Exclusief Aanbod
+                            <span className="inline-block bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm font-bold uppercase tracking-[0.2em]">
+                                Exclusief Aanbod
+                            </span>
                         </motion.h2>
                         <motion.h3
                             initial={{ opacity: 0, y: 20 }}

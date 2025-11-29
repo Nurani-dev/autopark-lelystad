@@ -25,7 +25,7 @@ const services = [
     {
         title: "Financiering",
         description: "Droomauto gevonden? Bij ons kun je rekenen op flexibele financieringsopties op maat.",
-        d: "M4 6h16v12H4zm2 2v4h12V8H6zm2 5h8v2H8v-2zm-2-7h12v2H6V6z", // Simplified banknote
+        d: "M15 18.5c-2.51 0-4.68-1.42-5.76-3.5H15v-2H8.58c-.05-.33-.08-.66-.08-1s.03-.67.08-1H15V9H9.24C10.32 6.92 12.5 5.5 15 5.5c1.61 0 3.09.59 4.23 1.57L21 5.3C19.41 3.87 17.3 3 15 3c-3.92 0-7.24 2.51-8.48 6H3v2h3.06c-.04.33-.06.66-.06 1 0 .34.02.67.06 1H3v2h3.52c1.24 3.49 4.56 6 8.48 6 2.31 0 4.41-.87 6-2.3l-1.78-1.77c-1.13.98-2.6 1.57-4.22 1.57z",
         viewBox: "0 0 24 24"
     },
 ];
@@ -49,7 +49,7 @@ export function Services() {
                             viewport={{ once: true }}
                             className="group p-8 border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 hover:border-anthracite-gradient hover:shadow-lg dark:hover:bg-white/10 transition-all duration-300 relative shadow-sm rounded-3xl"
                         >
-                            <div className="w-12 h-12 bg-white dark:bg-transparent border border-anthracite/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-anthracite-gradient">
+                            <div className="w-12 h-12 bg-zinc-900 border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-anthracite-gradient">
                                 <SilverIcon d={service.d} viewBox={service.viewBox} className="w-6 h-6" />
                             </div>
                             <h4 className="text-xl font-bold text-black mb-4 uppercase">{service.title}</h4>
