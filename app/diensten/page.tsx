@@ -93,7 +93,7 @@ export default function DienstenPage() {
                                                 <SilverIcon
                                                     d={service.d}
                                                     viewBox={service.viewBox}
-                                                    className="w-8 h-8 bg-anthracite-gradient group-hover:bg-none group-hover:bg-white transition-all duration-300"
+                                                    className="w-8 h-8 bg-anthracite-gradient transition-all duration-300"
                                                 />
                                             </div>
                                         </div>
