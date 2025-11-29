@@ -95,9 +95,26 @@ export function Header() {
                     <div className="hidden lg:flex items-center gap-4">
                         <Link
                             href="/contact"
-                            className="px-6 py-2 rounded-full border border-anthracite/50 text-anthracite hover:bg-anthracite-gradient hover:text-white hover:border-transparent transition-all duration-300 uppercase font-bold text-sm tracking-wider shadow-[0_0_15px_rgba(57,62,70,0.1)] hover:shadow-[0_0_25px_rgba(57,62,70,0.4)] relative overflow-hidden"
+                            className="group relative px-6 py-2 rounded-full overflow-hidden transition-all duration-300 hover:shadow-[0_0_25px_rgba(57,62,70,0.4)]"
                         >
-                            <span className="relative z-10">Contact</span>
+                            {/* Gradient Border (Masked) */}
+                            <div
+                                className="absolute inset-0 bg-anthracite-gradient rounded-full"
+                                style={{
+                                    mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                                    maskComposite: "exclude",
+                                    WebkitMaskComposite: "xor",
+                                    padding: "1px"
+                                }}
+                            />
+
+                            {/* Hover Fill */}
+                            <div className="absolute inset-0 bg-anthracite-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                            {/* Text */}
+                            <span className="relative z-10 font-bold uppercase text-sm tracking-wider text-anthracite-gradient group-hover:text-black group-hover:[background:none] group-hover:[-webkit-text-fill-color:black] transition-all duration-300">
+                                Contact
+                            </span>
                         </Link>
 
                     </div>
