@@ -35,7 +35,7 @@ export function Services() {
         <section className="py-24 bg-background relative transition-colors duration-300">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16">
-                    <h2 className="text-anthracite-gradient text-sm font-bold uppercase tracking-widest mb-2">Onze Expertise</h2>
+                    <h2 className="text-silver-sheen text-sm font-bold uppercase tracking-widest mb-2">Onze Expertise</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-foreground uppercase tracking-tight">Waarom Autopark Lelystad?</h3>
                 </div>
 
@@ -47,9 +47,9 @@ export function Services() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: index * 0.1, duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="group p-8 border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 hover:border-anthracite-gradient hover:shadow-lg dark:hover:bg-white/10 transition-all duration-300 relative shadow-sm rounded-3xl"
+                            className="group p-8 border border-gray-200 dark:border-white/10 bg-gray-100 dark:bg-white/5 hover:border-silver-sheen hover:shadow-lg dark:hover:bg-white/10 transition-all duration-300 relative shadow-sm rounded-3xl"
                         >
-                            <div className="w-12 h-12 bg-zinc-900 border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-anthracite-gradient">
+                            <div className="w-12 h-12 bg-zinc-900 border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-silver-sheen">
                                 <SilverIcon d={service.d} viewBox={service.viewBox} className="w-6 h-6" />
                             </div>
                             <h4 className="text-xl font-bold text-black mb-4 uppercase">{service.title}</h4>
@@ -69,7 +69,7 @@ function SilverIcon({ d, viewBox, className = "w-6 h-6" }: { d: string; viewBox:
 
     return (
         <div
-            className={`bg-anthracite-gradient ${className}`}
+            className={`bg-silver-sheen-dark ${className}`}
             style={{
                 maskImage: `url("${svgData}")`,
                 maskSize: "contain",

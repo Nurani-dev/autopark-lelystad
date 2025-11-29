@@ -2,7 +2,7 @@ export default function PrivacyPage() {
     return (
         <div className="min-h-screen bg-black text-white selection:bg-anthracite/30">
             <div className="pt-32 pb-20 container mx-auto px-4 max-w-4xl">
-                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-anthracite-gradient">Privacyverklaring</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-12 text-silver-sheen">Privacyverklaring</h1>
 
                 <div className="space-y-8 text-gray-300 leading-relaxed">
                     <section className="space-y-4">

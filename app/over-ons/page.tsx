@@ -20,7 +20,7 @@ export default function OverOnsPage() {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="mb-4">
-                        <span className="inline-block bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em]">
+                        <span className="inline-block text-silver-sheen text-sm md:text-base font-medium uppercase tracking-[0.2em]">
                             Autopark Lelystad
                         </span>
                     </h2>
@@ -47,8 +47,8 @@ export default function OverOnsPage() {
                             className="space-y-8"
                         >
                             <h2 className="text-4xl md:text-5xl font-bold leading-tight text-foreground">
-                                Passie voor <span className="inline-block bg-black/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-anthracite-gradient text-3xl md:text-4xl">Techniek</span> & <br />
-                                <span className="inline-block bg-black/80 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 text-anthracite-gradient text-3xl md:text-4xl mt-2">Kwaliteit</span>.
+                                Passie voor <span className="inline-block text-silver-sheen text-3xl md:text-4xl">Techniek</span> & <br />
+                                <span className="inline-block text-silver-sheen text-3xl md:text-4xl mt-2">Kwaliteit</span>.
                             </h2>
 
                             <div className="space-y-6 text-lg leading-relaxed">

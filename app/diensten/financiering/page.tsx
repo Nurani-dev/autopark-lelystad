@@ -97,7 +97,7 @@ export default function FinancieringPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-anthracite-gradient text-sm md:text-base font-bold uppercase tracking-widest mb-8"
+                        className="text-silver-sheen text-sm md:text-base font-bold uppercase tracking-widest mb-8"
                     >
                         Financiële Oplossingen
                     </motion.h2>
@@ -130,7 +130,7 @@ export default function FinancieringPage() {
                                 <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md">
                                     Wij helpen u graag op weg met een financiering die past bij uw wensen en mogelijkheden.
                                 </p>
-                                <Link href="/contact" className="inline-flex items-center gap-3 bg-anthracite-gradient text-black px-8 py-4 text-lg font-bold uppercase tracking-wider hover:scale-105 transition-transform rounded-sm">
+                                <Link href="/contact" className="inline-flex items-center gap-3 bg-silver-sheen-dark text-black px-8 py-4 text-lg font-bold uppercase tracking-wider hover:scale-105 transition-transform rounded-sm">
                                     <span>Vraag Offerte Aan</span>
                                     <ArrowRight className="w-6 h-6" />
                                 </Link>

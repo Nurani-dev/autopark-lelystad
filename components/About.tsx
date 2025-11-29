@@ -17,18 +17,28 @@ export function About() {
                         viewport={{ once: true }}
                         className="w-full lg:w-1/2 relative"
                     >
-                        <div className="aspect-[4/3] bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden relative z-10 shadow-xl">
-                            <div
-                                className="w-full h-full bg-[url('https://images.unsplash.com/photo-1562141961-b5d1855d7f30?q=80&w=2568&auto=format&fit=crop')] bg-cover bg-center hover:scale-105 transition-transform duration-700"
+                        <div className="aspect-[4/3] bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden relative z-10 shadow-xl group">
+                            <video
+                                src="/tiktok video 4.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
                         <div className="absolute -bottom-8 -right-8 w-2/3 aspect-[4/3] bg-white dark:bg-zinc-800 rounded-3xl overflow-hidden border-8 border-gray-100 dark:border-zinc-900 z-20 hidden md:block shadow-xl">
-                            <div
-                                className="w-full h-full bg-[url('https://images.unsplash.com/photo-1486262715619-01b8c22976f5?q=80&w=2600&auto=format&fit=crop')] bg-cover bg-center"
+                            <video
+                                src="/tiktok video 3.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover"
                             />
                         </div>
-                        <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-anthracite-gradient/50 z-0" />
-                        <div className="absolute -bottom-12 -right-12 w-32 h-32 border-b-2 border-r-2 border-anthracite-gradient/50 z-0" />
+                        <div className="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-silver-sheen/50 z-0" />
+                        <div className="absolute -bottom-12 -right-12 w-32 h-32 border-b-2 border-r-2 border-silver-sheen/50 z-0" />
                     </motion.div>
 
                     {/* Content */}
@@ -40,12 +50,12 @@ export function About() {
                         className="w-full lg:w-1/2"
                     >
                         <h2 className="mb-4">
-                            <span className="inline-block bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm font-bold uppercase tracking-widest">
+                            <span className="inline-block text-silver-sheen text-sm font-bold uppercase tracking-widest">
                                 Over Autopark Lelystad
                             </span>
                         </h2>
                         <h3 className="text-3xl md:text-4xl font-bold text-black uppercase tracking-tight mb-6">
-                            Passie voor <span className="text-anthracite-gradient">Exclusiviteit</span>
+                            Passie voor <span className="text-silver-sheen">Exclusiviteit</span>
                         </h3>
                         <p className="text-gray-600 text-lg leading-relaxed mb-8">
                             Autopark Lelystad is al jarenlang een vertrouwd adres voor alles wat met auto’s te maken heeft. Wij zijn een moderne autogarage met een passie voor techniek, kwaliteit en service.
@@ -67,7 +77,7 @@ export function About() {
 
                         <Link
                             href="/over-ons"
-                            className="inline-flex items-center gap-2 text-black font-bold uppercase tracking-wide hover:text-anthracite-gradient transition-colors group"
+                            className="inline-flex items-center gap-2 text-black font-bold uppercase tracking-wide hover:text-silver-sheen transition-colors group"
                         >
                             Lees ons verhaal <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 text-anthracite group-hover:text-anthracite" />
                         </Link>

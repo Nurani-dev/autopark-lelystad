@@ -55,7 +55,7 @@ export function Header() {
                 {/* Logo */}
                 <Link href="/" className="relative z-50">
                     <div
-                        className="h-12 md:h-16 w-32 md:w-48 bg-anthracite-gradient animate-shine transition-all duration-300"
+                        className="h-12 md:h-16 w-32 md:w-48 bg-silver-sheen-dark animate-shine transition-all duration-300"
                         style={{
                             maskImage: "url(/logo.png)",
                             maskSize: "contain",
@@ -81,8 +81,8 @@ export function Header() {
                                     "text-sm font-medium uppercase tracking-wide transition-colors relative group text-foreground hover:text-foreground/80"
                                 )}
                             >
-                                <span className="group-hover:text-anthracite-gradient transition-all duration-300">{link.name}</span>
-                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-anthracite-gradient transition-all group-hover:w-full" />
+                                <span className="group-hover:text-silver-sheen transition-all duration-300">{link.name}</span>
+                                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-silver-sheen-dark transition-all group-hover:w-full" />
                             </Link>
                         ))}
                     </nav>
@@ -95,20 +95,16 @@ export function Header() {
                         >
                             {/* Gradient Border (Masked) */}
                             <div
-                                className="absolute inset-0 bg-anthracite-gradient rounded-full"
+                                className="absolute inset-0 bg-silver-sheen-dark rounded-full"
                                 style={{
                                     mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
                                     maskComposite: "exclude",
                                     WebkitMaskComposite: "xor",
                                     padding: "1px"
                                 }}
-                            />
-
-                            {/* Hover Fill */}
-                            <div className="absolute inset-0 bg-anthracite-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
-                            {/* Text */}
-                            <span className="relative z-10 font-bold uppercase text-sm tracking-wider text-anthracite-gradient group-hover:text-white group-hover:[background:none] group-hover:[-webkit-text-fill-color:white] transition-all duration-300">
+                            ></div>
+                            <div className="absolute inset-0 bg-silver-sheen-dark transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out" />
+                            <span className="relative z-10 font-bold uppercase text-sm tracking-wider text-silver-sheen group-hover:text-white group-hover:[background:none] group-hover:[-webkit-text-fill-color:white] transition-all duration-300">
                                 Contact
                             </span>
                         </Link>

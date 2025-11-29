@@ -25,7 +25,7 @@ export function FeaturedCars() {
                             viewport={{ once: true }}
                             className="mb-4"
                         >
-                            <span className="inline-block bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm font-bold uppercase tracking-[0.2em]">
+                            <span className="inline-block text-silver-sheen text-sm font-bold uppercase tracking-[0.2em]">
                                 Exclusief Aanbod
                             </span>
                         </motion.h2>
@@ -48,7 +48,7 @@ export function FeaturedCars() {
                     >
                         <Link
                             href="/voorraad"
-                            className="group flex items-center gap-3 text-foreground hover:text-anthracite-gradient transition-colors"
+                            className="group flex items-center gap-3 text-foreground hover:text-silver-sheen transition-colors"
                         >
                             <span className="uppercase tracking-wider text-sm font-medium">Bekijk alle auto's</span>
                             <div className="w-10 h-10 rounded-full border border-black/20 dark:border-white/20 flex items-center justify-center group-hover:border-anthracite group-hover:bg-anthracite/10 transition-all duration-300">

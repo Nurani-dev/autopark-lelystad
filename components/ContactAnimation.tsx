@@ -7,7 +7,7 @@ export function ContactAnimation() {
         <div className="relative w-full h-64 flex items-center justify-center overflow-hidden bg-black/20 backdrop-blur-sm border border-white/5 rounded-2xl mb-8">
             {/* Center Core */}
             <motion.div
-                className="relative z-10 w-16 h-16 bg-anthracite-gradient rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(57,62,70,0.6)]"
+                className="relative z-10 w-16 h-16 bg-silver-sheen-dark rounded-full flex items-center justify-center shadow-[0_0_30px_rgba(57,62,70,0.6)]"
                 animate={{
                     scale: [1, 1.1, 1],
                     boxShadow: [
@@ -19,7 +19,7 @@ export function ContactAnimation() {
                 transition={{ duration: 2, repeat: Infinity }}
             >
                 <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
-                    <div className="w-8 h-8 bg-anthracite-gradient rounded-full" />
+                    <div className="w-8 h-8 bg-silver-sheen-dark rounded-full" />
                 </div>
             </motion.div>
 

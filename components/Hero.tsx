@@ -60,13 +60,13 @@ export function Hero() {
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, delay: 0.2, ease: "circOut" }}
                     >
-                        <h2 className="inline-block bg-black/90 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm font-bold uppercase tracking-[0.2em] mb-6 shadow-lg">
+                        <h2 className="inline-block text-silver-sheen text-sm font-bold uppercase tracking-[0.2em] mb-6">
                             Exclusieve Occasions & Service
                         </h2>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-black mb-8 tracking-tighter uppercase leading-[0.9]">
                             Autopark <br />
-                            <span className="text-anthracite-gradient">Lelystad</span>
+                            <span className="text-silver-sheen">Lelystad</span>
                         </h1>
 
                         <p className="text-gray-600 text-lg md:text-xl max-w-xl mx-auto lg:mx-0 mb-10 font-light leading-relaxed">
@@ -76,7 +76,7 @@ export function Hero() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
                             <Link
                                 href="/voorraad"
-                                className="group relative px-8 py-4 bg-anthracite-gradient text-black font-bold uppercase tracking-wider overflow-hidden rounded-full min-w-[200px] text-center shadow-lg shadow-black/5"
+                                className="group relative px-8 py-4 bg-silver-sheen-dark text-black font-bold uppercase tracking-wider overflow-hidden rounded-full min-w-[200px] text-center shadow-lg shadow-black/5"
                             >
                                 <span className="relative z-10 flex items-center justify-center gap-2">
                                     Bekijk Voorraad <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
@@ -101,28 +101,8 @@ export function Hero() {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
             >
-                <SilverStrokeIcon d="M6 9l6 6 6-6" viewBox="0 0 24 24" className="w-12 h-12" />
+                <ChevronDown className="w-12 h-12 text-black" />
             </motion.div>
         </section>
-    );
-}
-
-function SilverStrokeIcon({ d, viewBox, className = "w-6 h-6" }: { d: string; viewBox: string; className?: string }) {
-    const svgData = `data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='${viewBox}'><path d='${d}' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg>`;
-
-    return (
-        <div
-            className={`bg-anthracite-gradient ${className}`}
-            style={{
-                maskImage: `url("${svgData}")`,
-                maskSize: "contain",
-                maskRepeat: "no-repeat",
-                maskPosition: "center",
-                WebkitMaskImage: `url("${svgData}")`,
-                WebkitMaskSize: "contain",
-                WebkitMaskRepeat: "no-repeat",
-                WebkitMaskPosition: "center",
-            }}
-        />
     );
 }

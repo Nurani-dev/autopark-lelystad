@@ -91,7 +91,7 @@ export default function ImportExportPage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-anthracite-gradient text-sm md:text-base font-bold uppercase tracking-widest mb-8"
+                        className="text-silver-sheen text-sm md:text-base font-bold uppercase tracking-widest mb-8"
                     >
                         Wereldwijde Dekking
                     </motion.h2>
@@ -124,7 +124,7 @@ export default function ImportExportPage() {
                                 <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md">
                                     Wij nemen alle zorgen uit handen zodat u zich kunt richten op wat echt telt: genieten van uw nieuwe aanwinst.
                                 </p>
-                                <Link href="/contact" className="inline-flex items-center gap-3 bg-anthracite-gradient text-black px-8 py-4 text-lg font-bold uppercase tracking-wider hover:scale-105 transition-transform rounded-sm">
+                                <Link href="/contact" className="inline-flex items-center gap-3 bg-silver-sheen-dark text-black px-8 py-4 text-lg font-bold uppercase tracking-wider hover:scale-105 transition-transform rounded-sm">
                                     <span>Start Uw Import/Export</span>
                                     <ArrowRight className="w-6 h-6" />
                                 </Link>

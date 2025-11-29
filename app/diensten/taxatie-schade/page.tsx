@@ -90,7 +90,7 @@ export default function TaxatieSchadePage() {
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        className="text-anthracite-gradient text-sm md:text-base font-bold uppercase tracking-widest mb-8"
+                        className="text-silver-sheen text-sm md:text-base font-bold uppercase tracking-widest mb-8"
                     >
                         Expertise & Kwaliteit
                     </motion.h2>
@@ -123,7 +123,7 @@ export default function TaxatieSchadePage() {
                                 <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-md">
                                     Van kleine reparaties tot complete restauraties: wij zorgen ervoor dat uw auto in topconditie blijft.
                                 </p>
-                                <Link href="/contact" className="inline-flex items-center gap-3 bg-anthracite-gradient text-black px-8 py-4 text-lg font-bold uppercase tracking-wider hover:scale-105 transition-transform rounded-sm">
+                                <Link href="/contact" className="inline-flex items-center gap-3 bg-silver-sheen-dark text-black px-8 py-4 text-lg font-bold uppercase tracking-wider hover:scale-105 transition-transform rounded-sm">
                                     <span>Maak een Afspraak</span>
                                     <ArrowRight className="w-6 h-6" />
                                 </Link>

@@ -56,7 +56,7 @@ export function CarCard({ car, index = 0, priority = false }: CarCardProps) {
                     <h3 className="text-foreground dark:text-white/60 text-sm uppercase tracking-wider mb-1">
                         {car.make}
                     </h3>
-                    <h2 className="text-2xl font-bold text-foreground group-hover:text-anthracite-gradient transition-colors line-clamp-1">
+                    <h2 className="text-2xl font-bold text-foreground group-hover:text-silver-sheen transition-colors line-clamp-1">
                         {car.model}
                     </h2>
                 </div>
@@ -86,7 +86,7 @@ export function CarCard({ car, index = 0, priority = false }: CarCardProps) {
                     href={`/voorraad/${car.id}`}
                     className="flex items-center justify-between w-full py-4 border-t border-black/10 dark:border-white/10 group/link"
                 >
-                    <span className="text-foreground font-medium uppercase tracking-wider text-sm group-hover/link:text-anthracite-gradient transition-colors">
+                    <span className="text-foreground font-medium uppercase tracking-wider text-sm group-hover/link:text-silver-sheen transition-colors">
                         Bekijk details
                     </span>
                     <div className="w-8 h-8 rounded-full border border-black/20 dark:border-white/20 flex items-center justify-center group-hover/link:border-anthracite group-hover/link:bg-anthracite/10 transition-all duration-300">

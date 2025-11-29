@@ -50,7 +50,7 @@ export default function DienstenPage() {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="mb-4">
-                        <span className="inline-block bg-black/80 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em]">
+                        <span className="inline-block text-silver-sheen text-sm md:text-base font-medium uppercase tracking-[0.2em]">
                             Exclusieve Service op Maat
                         </span>
                     </h2>
@@ -74,7 +74,7 @@ export default function DienstenPage() {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.1, duration: 0.5 }}
                                     viewport={{ once: true }}
-                                    className="relative h-[400px] overflow-hidden rounded-sm border border-gray-200 dark:border-white/10 group-hover:border-anthracite-gradient transition-all duration-500"
+                                    className="relative h-[400px] overflow-hidden rounded-sm border border-gray-200 dark:border-white/10 group-hover:border-silver-sheen transition-all duration-500"
                                 >
                                     {/* Background Image with Overlay */}
                                     <div className="absolute inset-0">
@@ -91,11 +91,11 @@ export default function DienstenPage() {
                                     {/* Content */}
                                     <div className="absolute inset-0 p-10 flex flex-col justify-end">
                                         <div className="mb-auto">
-                                            <div className="w-16 h-16 bg-black/80 backdrop-blur-sm border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-anthracite-gradient">
+                                            <div className="w-16 h-16 bg-black/80 backdrop-blur-sm border border-white/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 group-hover:border-silver-sheen">
                                                 <SilverIcon
                                                     d={service.d}
                                                     viewBox={service.viewBox}
-                                                    className="w-8 h-8 bg-anthracite-gradient transition-all duration-300"
+                                                    className="w-8 h-8 bg-silver-sheen-dark transition-all duration-300"
                                                 />
                                             </div>
                                         </div>

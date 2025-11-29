@@ -13,7 +13,7 @@ export default function ContactPage() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    <h2 className="text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
+                    <h2 className="text-silver-sheen text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
                         Neem contact op
                     </h2>
                     <h1 className="text-4xl md:text-6xl font-bold text-foreground tracking-tighter uppercase">

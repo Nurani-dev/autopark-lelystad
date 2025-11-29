@@ -10,7 +10,7 @@ export function Footer() {
                     <div className="space-y-6">
                         <Link href="/" className="block w-48">
                             <div
-                                className="w-full h-12 bg-anthracite-gradient animate-shine transition-all duration-300"
+                                className="w-full h-12 bg-silver-sheen-dark animate-shine transition-all duration-300"
                                 style={{
                                     maskImage: "url(/logo.png)",
                                     maskSize: "contain",
@@ -47,12 +47,12 @@ export function Footer() {
 
                     {/* Quick Links */}
                     <div>
-                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-anthracite-gradient pl-4 border-image-anthracite-gradient text-anthracite-gradient">Snelle Links</h3>
+                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-silver-sheen pl-4 text-silver-sheen">Snelle Links</h3>
                         <ul className="space-y-3">
                             {["Home", "Voorraad", "Diensten", "Over ons", "Contact"].map((item) => (
                                 <li key={item}>
                                     <Link href={`/${item.toLowerCase().replace(" ", "-") === "home" ? "" : item.toLowerCase().replace(" ", "-")}`} className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                        <span className="w-1.5 h-1.5 bg-anthracite-gradient rounded-full" />
+                                        <span className="w-1.5 h-1.5 bg-silver-sheen-dark rounded-full" />
                                         {item}
                                     </Link>
                                 </li>
@@ -62,12 +62,12 @@ export function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-anthracite-gradient pl-4 border-image-anthracite-gradient text-anthracite-gradient">Diensten</h3>
+                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-silver-sheen pl-4 text-silver-sheen">Diensten</h3>
                         <ul className="space-y-3">
                             {["Inkoop & Verkoop", "Onderhoud & Reparatie", "APK Keuring", "Airco Service", "Diagnose"].map((item) => (
                                 <li key={item}>
                                     <Link href="/diensten" className="text-gray-400 hover:text-white transition-colors flex items-center gap-2 group">
-                                        <span className="w-1.5 h-1.5 bg-anthracite-gradient rounded-full" />
+                                        <span className="w-1.5 h-1.5 bg-silver-sheen-dark rounded-full" />
                                         {item}
                                     </Link>
                                 </li>
@@ -77,7 +77,7 @@ export function Footer() {
 
                     {/* Contact */}
                     <div>
-                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-anthracite-gradient pl-4 border-image-anthracite-gradient text-anthracite-gradient">Contact</h3>
+                        <h3 className="text-lg font-bold uppercase mb-6 border-l-4 border-silver-sheen pl-4 text-silver-sheen">Contact</h3>
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3 text-gray-400">
                                 <div className="mt-1">

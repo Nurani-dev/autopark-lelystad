@@ -28,7 +28,7 @@ export function PageHeader({ title, subtitle, image }: PageHeaderProps) {
                     transition={{ duration: 0.8, ease: "circOut" }}
                 >
                     {subtitle && (
-                        <h2 className="text-anthracite-gradient text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
+                        <h2 className="text-silver-sheen text-sm md:text-base font-medium uppercase tracking-[0.2em] mb-4">
                             {subtitle}
                         </h2>
                     )}
